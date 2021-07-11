@@ -1,10 +1,11 @@
 import http.client
 import json
 conn=http.client.HTTPSConnection("api.collectapi.com")
-headers={
-    'content-type':"application/json",
-    'authorization':"apikey 1WGj2kLsPQrkKY0woHpy5B:4CcLtI3GdFIiibgIb2zhpl"
-}
+headers = {
+    'content-type': "application/json",
+    'authorization': "apikey 1WGj2kLsPQrkKY0woHpy5B:4CcLtI3GdFIiibgIb2zhpl"
+    }
+
 
 il=input("il  giriniz : ")
 if il=="":
@@ -15,8 +16,8 @@ else:
 
 ilce=input("ilce giriniz : ")
 if ilce=="":
-    print("ilce bilgisi bos, varsayilan olarak Cankaya yapildi")
-    ilce=="Cankaya"
+    print("ilce bilgisi bos, varsayilan olarak Çankaya yapildi")
+    ilce=="Çankaya"
 else:
     ilce=ilce.strip().capitalize()
 print(il,ilce)
