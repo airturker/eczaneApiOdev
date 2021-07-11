@@ -18,7 +18,7 @@ if ilce=="":
     print("ilce bilgisi bos, varsayilan olarak Cankaya yapildi")
     ilce=="Cankaya"
 else:
-    il=il.strip().capitalize()
+    ilce=ilce.strip().capitalize()
 print(il,ilce)
 
 bilgi="/health/dutyPharmacy?ilce="+ilce+"&il"+il
