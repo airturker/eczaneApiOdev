@@ -22,7 +22,7 @@ else:
     ilce=ilce.strip().capitalize()
 print(il,ilce)
 
-bilgi="/health/dutyPharmacy?ilce="+ilce+"&il"+il
+bilgi="/health/dutyPharmacy?ilce="+ilce+"&il="+il
 conn.request("GET",bilgi,headers=headers)
 res=conn.getresponse()
 data=res.read()
